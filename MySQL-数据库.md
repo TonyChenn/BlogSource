@@ -2,37 +2,36 @@
 title: MySQL-数据库
 date: 2018-04-23 12:21:46
 tags: MySQL
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017/11.06/Mysql.png
 ---
-![](https://labs.mysql.com/common/logos/mysql-logo.svg?v2)
-<!--more-->
 
 # 数据库操作
 ## 创建数据库：
 ```sql
 create database database_name;
 ```
-![](https://ww1.sinaimg.cn/mw690/006PThdlly1furt78jcr2j30ae01p3yi.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/create.jpg)
 
 
 ## 显示所有数据库：
 ```sql
 show databases;
 ```
-![](https://ww1.sinaimg.cn/mw690/006PThdlly1furt7e28apj306506jwei.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/showall.jpg)
 
 
 ## 选择使用数据库：
 ```sql
 use databsae_name;
 ```
-![](https://ww1.sinaimg.cn/mw690/006PThdlly1furt7im4yyj3051019wea.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/select.jpg)
 
 
 ## 删除数据库：
 ```sql
 drop database database_name;
 ```
-![](https://ww1.sinaimg.cn/mw690/006PThdlly1furt7mnopbj30a501aweh.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/delete.jpg)
 
 
 # 表操作
@@ -50,14 +49,14 @@ show tables;
 ```sql
 create table country(id int auto_increment ,name varchar(30), primary key(id) );  
 ```
-![](https://ww1.sinaimg.cn/large/006PThdlly1furt3fr69yj307x03g3yi.jpg) 
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/createtable.jpg)
 
 
 ## 查看表结构：
 ```sql
 desc table_name;
 ```
-![](https://ww1.sinaimg.cn/large/006PThdlly1furt40ncaoj30hs03eq31.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/tablestruct.jpg)
 
 
 # 数据操作
@@ -68,21 +67,21 @@ desc table_name;
 ```sql
 insert into table_name(name) values ('china');
 ```
-![](https://ww1.sinaimg.cn/large/006PThdlly1furt5bya6qj30e301iaa3.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/add.jpg)
 
 
 ## 修改表内数据
 ```sql
 update table_name set item1=value1 where condition;
 ```
-![](https://ww1.sinaimg.cn/large/006PThdlly1furt5hd4kvj30ei0cyt9b.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/edit.jpg)
 
 
 ## 删除表中数据：
 ```sql
 delete from table_name where condition;
 ```
-![](https://ww1.sinaimg.cn/large/006PThdlly1furt5mo4zqj30dt06dweq.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/deletetable.jpg)
 
 ## 查询表内所有数据:
 ```sql
@@ -132,7 +131,7 @@ select * from table_name where name like 'A_';
 select * from country order by id desc;  
 ```
 
-![](https://ww1.sinaimg.cn/large/006PThdlly1furt5qz1xbj30cu0613yn.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.23/desc.jpg)
 
 **5.1.表内数据正序排序**  
 ```sql

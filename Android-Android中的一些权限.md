@@ -2,6 +2,7 @@
 title: Android中的一些权限
 date: 2018-03-16 20:21:10
 tags: Android
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/03.16/icon.jpg
 ---
 <center>Android中一些常用权限</center >
 

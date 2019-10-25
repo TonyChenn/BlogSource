@@ -2,6 +2,7 @@
 title: android-简易发短信软件
 date: 2017-07-09 18:31:30
 tags: Android
+img: 
 ---
  **MainActivity.java**
 

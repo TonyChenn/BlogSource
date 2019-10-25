@@ -5,10 +5,8 @@ tags: CSharp
 password:
 top:
 description: 嗯，生活要对Excel动刀子了
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.25/excel.jpg
 ---
-![](https://ws1.sinaimg.cn/mw690/006PThdlgy1fvm2v2jcgyj30m80cigll.jpg)
-<!--more-->
-
 
 对于新版本，和老版本Excel创建的xls(xlsx)版本，需要用不同的连接字符串,自行选择
 ```csharp
@@ -66,7 +64,7 @@ foreach (DataRow row in rows)
 ```
 输出内容：
 
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvm2hvzyyyj30az06pdfu.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.25/result.jpg)
 
 
 > 参考：SikiC#高级课程

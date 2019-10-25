@@ -2,10 +2,9 @@
 title: Android-动态申请权限
 date: 2017-10-16 21:18:06
 tags: Android
-img: https://source.unsplash.com/random/800x450
+img: 
 ---
-![]()
-<!--more-->
+
 ## 前言
 在之前一篇关于高德定位错误总结的博客中，遇到在Android版本达到6.0+时对于一些危险权限用户手动授予，没有动态申请就会出现软件不能使用的问题，所以写出这篇博客解决动态申请权限的问题。
 

@@ -2,9 +2,9 @@
 title: Unity学习笔记
 date: 2018-01-05 13:01:20
 tags: Unity
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/01.05/unity.jpg
 ---
-![](https://ws1.sinaimg.cn/mw690/006PThdlgy1fw9uwkmua7j30jf0cq4aq.jpg)
-<!--more-->
+
 # 1.OnTriggerEnter与OnColliderEnter
 
 1）如果想实现两个刚体物理的实际碰撞效果时候用OnCollisionEnter，Unity引擎会自动处理刚体碰撞的效果。OnCollisionEnter方法必须是在两个碰撞物体都不勾选isTrigger的前提下才能进入。  

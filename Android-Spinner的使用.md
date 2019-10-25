@@ -2,10 +2,9 @@
 title: Android-Spinner的使用
 date: 2017-06-26 13:39:26
 tags: Android
+img: https://i.loli.net/2019/04/28/5cc55090d5873.jpg
 ---
- **首先呢，看下Spinner 长什么样子**   
-![](https://ws1.sinaimg.cn/mw690/006PThdlgy1fvg2iqdwytj30ff09wdg1.jpg)
-<!-- more -->
+
  **1.第一步**   
  在string中添加一个字符数组：如下所示：
 

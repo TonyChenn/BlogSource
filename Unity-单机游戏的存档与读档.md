@@ -2,9 +2,8 @@
 title: Unity-单机游戏的存档与读档
 date: 2018-04-06 17:18:18
 tags: Unity
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.06/icon.jpg
 ---
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fw9vsri3fkj30dc07igpa.jpg)
-<!--more-->
 
 # 1.PlayerPrefs;
 存储数据

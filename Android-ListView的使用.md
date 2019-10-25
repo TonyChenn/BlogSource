@@ -3,8 +3,9 @@ title: Android-ListView的使用
 date: 2017-08-06 18:06:15
 tags: Android
 description: 对Android中ListView界面及数据绑定的总结
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017.08.06/icon.jpg
 ---
-<!--more-->
+
  **ListView 的实现步骤**
 
   1. 新建数据适配器 
@@ -14,7 +15,7 @@ description: 对Android中ListView界面及数据绑定的总结
 
  **案例一：（使用ListAdapter实现ListView（只包含文字哦））**   
  貌似要先来张照片（这次把图片整小点吧）   
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvfypgy97ij30920e8aai.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017.08.06/001.jpg)
 
  布局文件中添加：
 
@@ -59,7 +60,7 @@ mListView.setAdapter(mArrayAdapter);
  **案例一：（使用SimpleAdapter实现ListView（包含图片和文字））**
 
  先看看效果：   
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvfypnlkdbj309c0ffaax.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017.08.06/002.jpg)
 
  main.xml
 

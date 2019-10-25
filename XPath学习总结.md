@@ -7,9 +7,8 @@ tags:
 top:
 password:
 description: 简单粗暴的讲就是--在xml中用来查找信息的语言
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.08/icon.jpg
 ---
-![](https://ws1.sinaimg.cn/large/006PThdlly1fx0vclgaupj30go0cgjre.jpg)
-<!--more-->
 
 ## 什么是Xpath?
 XPath 是一门在 XML 文档中查找信息的语，Xpath通过使用路径表达式，实现选取XML文档中的一个或多个节点集合。

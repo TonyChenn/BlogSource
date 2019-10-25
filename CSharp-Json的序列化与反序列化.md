@@ -6,9 +6,9 @@ tags:
       - LitJson
       - CSharp
       - fastJson
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/icon.jpg
 ---
-![](https://ws1.sinaimg.cn/mw690/006PThdlgy1fw9u764s73j31gw0qtn1x.jpg)
-<!--more-->
+
 ## JSON介绍
 Json是一种轻量数据交互格式，易于阅读，编写，基于ECMAScript 的一个子集,是一种独立语言。为了数据传输方便，传输时，将要传输的对象序列化为Json，效率极高。接收时，通过反序列化转化成对象。与XML语言效果一样。两者可以相互代替。但比XML更简洁，更容易阅读，传输效率更高。
 
@@ -16,11 +16,11 @@ Json是一种轻量数据交互格式，易于阅读，编写，基于ECMAScript
 - 数据保存在键值对中
 - 数据由逗号分隔
 - 花括号保存对象
-  ![image](https://json.org/object.gif)
+  ![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/object.png)
 - 方括号保存数组
-  ![image](https://json.org/array.gif)
+  ![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/array.png)
 - 值可以是双引号括起来的字符串、数值(number)、true、false、 null、对象或者数组（array）
-   ![image](https://json.org/value.gif)
+   ![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/value.png)
 
 ## 1. 使用LitJson进行序列化与反序列化
 
@@ -58,7 +58,7 @@ Console.WriteLine(json);
 ```
 输出结果(汉字自动转化为Unicode)：
 
-![](https://ws1.sinaimg.cn/large/006PThdlly1fv13dxita6j30ei07owef.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/result.jpg)
 
 ### 反序列化
 - 类型一：

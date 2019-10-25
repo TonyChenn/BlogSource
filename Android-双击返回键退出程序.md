@@ -1,5 +1,5 @@
 ---
-title: '[Android]双击返回键退出程序'
+title: 'Android-双击返回键退出程序'
 date: 2018-03-16 20:16:58
 tags: Android
 ---

@@ -2,9 +2,8 @@
 title: Android-RelativeLayout
 date: 2017-10-07 22:07:04
 tags: Android
+img: https://i.loli.net/2019/04/28/5cc54fe8585bf.jpg
 ---
-![](https://source.unsplash.com/random/800x450)
-<!--more-->
 
  **相对布局常用属性：**
 

@@ -2,12 +2,12 @@
 title: Android-WebView
 date: 2017-10-11 13:06:27
 tags: Android
-img: https://source.unsplash.com/random/800x450
+img: 
 ---
 
 浏览器主要是使用WebView组件
 
- 先看下简单的效果![](https://ws1.sinaimg.cn/large/006PThdlly1fusv9m6xy0j307i0dcq5d.jpg)
+ 先看下简单的效果![](https://i.loli.net/2019/04/28/5cc551960400b.jpg)
 
  只实现了一些简单的浏览器功能
  

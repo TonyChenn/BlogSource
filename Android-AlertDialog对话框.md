@@ -2,10 +2,9 @@
 title: 【Android】AlertDialog对话框
 date: 2017-08-26 16:19:26
 tags: Android
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/icon.jpg
 ---
 
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvfy7qpwvsj30a007kq2y.jpg)
-<!-- more -->
  **1.普通的：** 
 ```java
 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -34,7 +33,7 @@ builder.show();
 ```
  **2. 列表：**
 
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvfy4bsuddj30a00hs3yy.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/001.jpg)
 
  
 ```java
@@ -56,7 +55,7 @@ builder.show();
 ```
  **3.包含单选框**  
  
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvfy4ktcvxj30a00hsglz.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/002.jpg)
  
 ```java
 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -89,7 +88,7 @@ builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
 builder.show();
 ```
  4.包含CheckBox   
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvfy4z5kk7j30a00hs3yx.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/003.jpg)
 
  
 ```java

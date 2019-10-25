@@ -2,7 +2,7 @@
 title: Android-sweetDialog看着都是甜的
 date: 2017-09-12 14:50:35
 tags: Android
-img: https://source.unsplash.com/random/800x450
+img: 
 ---
 
  ==声明：本篇文章为转载==

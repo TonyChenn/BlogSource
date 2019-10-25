@@ -5,9 +5,9 @@ tags: Git
 top:
 password:
 description: 将本地Git仓库与Github绑定起来
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/github.jpg
 ---
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fwjemhk79hj30ep08c0tp.jpg)
-<!--more-->
+
 # 第一次使用的配置
 1. 当然要注册github账号了;
 2. 由于本地Git仓库与Github仓库是通过SSH加密的，所以需要创建一个SSH Key;
@@ -18,12 +18,11 @@ ssh-keygen -t rsa -C "youremail@example.com"
 //ssh-keygen -t rsa -C "852454151@qq.com"
 ```
 3. 打开用户主目录，找到<b>.ssh</b>文件夹，打开里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
-![](https://ws1.sinaimg.cn/large/006PThdlly1fwjcn6xcc2j30kn0c6dgn.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/create.jpg)
  登陆Github配置SSH Keys(位置在：右上角头像->Setting->SSH and GPG keys->New SSH Key),将id_rsa.pub内容粘贴到key中;
 
 4. 登陆Github,创建一个新的repository
-
-![](https://ws1.sinaimg.cn/large/006PThdlly1fwjcxllecfj30mn0ht409.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/resign.jpg)
 
 5. 关联远程库
 ```c
@@ -34,17 +33,26 @@ git remote add origin git@github.com:tonychenn/BlogSource.git
 # 推送本地仓库文件到Github
 (第一次推送此处可能会出错，到文章下面招解决方案)
 
-关联后，使用命令  ``` git push -u origin master ``` 第一次推送master分支的所有内容；</br>
-此后，每次本地提交后，只要有必要，就可以使用命令 ```git push origin master``` 推送最新修改；
+关联后，使用命令  
+``` 
+git push -u origin master 
+``` 
+第一次推送master分支的所有内容；</br>
+此后，每次本地提交后，只要有必要，就可以使用命令 
+```
+git push origin master
+``` 
+推送最新修改；
 
 此时就能在Github上看到推送上去的readme.txt文件啦
 
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fwjeclfvz2j30ri0gr40f.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/see.jpg)
 
 
 # 克隆Github仓库文件到本地
 本地文件夹 gitbush 执行 ```git clone https://github.com/TonyChenn/BlogSource.git```
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fwjgg377omj30rj0cb75x.jpg)
+
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/pull.jpg)
 
 # 遇到错误
 <div class="note danger no-icon"><p>failed to push some refs to 'git@github.com:.../....git</p></div>

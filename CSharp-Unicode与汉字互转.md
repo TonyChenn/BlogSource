@@ -3,8 +3,8 @@ title: 'CSharp-Unicode与汉字互转'
 date: 2018-06-11 12:27:58
 tags: CSharp
 description: 将Unicode 转化为汉字
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/06.11/icon.jpg
 ---
-<!-- more -->
 
 ```csharp
 public string UnicodeToString(string unicode)

@@ -6,7 +6,6 @@ tags:
   - Android
 ---
 
-<!--more-->
 1. 获取QQ头像:
 
 ```

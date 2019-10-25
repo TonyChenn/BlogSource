@@ -2,11 +2,9 @@
 title: Android-Splash的使用
 date: 2017-07-10 22:11:34
 tags: Android
+description: 我们都使用过手机QQ，当我们第一次启动时会显示企鹅画面，几秒后进入登录界面，那么今天写的就是实现Splash闪屏效果。
+img: https://i.loli.net/2019/04/28/5cc550b77b1a5.jpg
 ---
- **我们都使用过手机QQ，当我们第一次启动时会显示企鹅画面，几秒后进入登录界面，那么今天写的就是实现Splash 闪屏效果。**
-
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvfyxizi52j307i0dc0ty.jpg)
-<!-- more -->
  由于简单就直接贴上核心代码：   
  **Splash.java**
 

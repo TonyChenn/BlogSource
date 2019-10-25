@@ -2,9 +2,9 @@
 title: Unity-DOTween插件的使用
 date: 2018-04-08 20:21:15
 tags: Unity
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.08/icon.jpg
 ---
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fw9wjhyx81j30hs0begmp.jpg)
-<!--more-->
+
 # 1.添加插件，添加命名空间
 ```
 using DG.Tweening;

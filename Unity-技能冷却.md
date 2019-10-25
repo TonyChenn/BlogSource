@@ -3,18 +3,18 @@ title: Unity-技能冷却
 date: 2017-11-30 11:48:01
 tags: Unity
 description: 技能冷却特效
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017/11.30/icon.jpg
 ---
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fw9w0vwvglj30zk0k04qp.jpg)
-<!--more-->
 
 国际惯例：先放效果图：   
 
-![](https://ww1.sinaimg.cn/mw690/006PThdlly1furte1ulp7j305m05o3zi.jpg)
+![show](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017/11.30/show.jpg)
 
  那~就实现这个效果，当点击技能按钮后，技能进入冷却状态，技能逐渐冷却完成，相信经常玩游戏的都知道；
 
  结构图：   
- ![](https://ww1.sinaimg.cn/mw690/006PThdlly1furte6gvwaj3080026q2x.jpg)   
+![struct](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017/11.30/struct.jpg)
+
  挺简单，解释在图片上；   
  更改FillImage上的ImageType属性为:Failed;
 
