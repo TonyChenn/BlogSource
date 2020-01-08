@@ -5,7 +5,7 @@ tags: Hackintosh
 top:
 password:
 description:
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0614/mojave.png
+img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0614/mojave.jpg
 ---
 
 # 1.Windows环境下:
