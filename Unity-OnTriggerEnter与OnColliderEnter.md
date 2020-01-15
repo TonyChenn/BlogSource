@@ -2,7 +2,7 @@
 title: Unity学习笔记
 date: 2018-01-05 13:01:20
 tags: Unity
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/01.05/unity.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/01.05/unity.jpg
 ---
 
 # 1.OnTriggerEnter与OnColliderEnter

@@ -2,7 +2,7 @@
 title: Unity-编辑器拓展
 date: 2019-11-19 09:28:16
 tags: Unity
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/1119/icon.png
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/icon.png
 description:
 top:
 ---
@@ -46,7 +46,7 @@ public class ExTool
     {   Debug.Log("测试3");   }
 }
 ```
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/1119/unsort.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/unsort.png)
 
 ## Hierarchy窗口鼠标右击菜单
 即将自定义菜单路径设置在"GameObject/"路径下;
@@ -82,7 +82,7 @@ public class ExTool
     }
 }
 ```
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/1119/Inspertor.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/Inspertor.jpg)
 ## 获取当前操作对象
 ```csharp
 [MenuItem("CONTEXT/Camera/绿色背景")]
@@ -217,7 +217,7 @@ public class Dialog :ScriptableWizard
     }
 }
 ```
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/1119/ScriptableWizard.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/ScriptableWizard.jpg)
 # 数据保存EditorPrefs
 与PlayerPrefs相对，在编辑器模式下有EditorPrefs，用法一致。
 
@@ -251,5 +251,5 @@ public class MyWindow : EditorWindow
     }
 }
 ```
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/1119/MyWindow.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/MyWindow.jpg)
 

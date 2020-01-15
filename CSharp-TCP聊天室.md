@@ -5,7 +5,7 @@ tags:
     - TCP
     - CSharp
 description: Winform实现聊天室，包含群发，一对一聊天，一对多聊天，包含客户端，服务器端两部分。
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/04.13/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0413/icon.jpg
 ---
 # 前言:
 TCP是一种面向连接的，可靠的，基于字节流的传输层通讯协议。记录下Winform基于TCP协议的连天室。

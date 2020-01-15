@@ -2,7 +2,7 @@
 title: 字符匹配_KMP算法
 date: 2019-10-21 14:17:21
 tags: 算法
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.10.21/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1021/icon.jpg
 ---
 
 # 什么是KMP算法
@@ -57,14 +57,14 @@ needle 字符串的前缀表如下：
 
 ## KMP匹配思想：
 1. 开始匹配，刚开始i=0,j=0,needle[j]与haystack[i]进行比较，直到i=5时，needle[5]与haystack[5]不相等，此时将i指向索引为prefix[5]的位置。
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.10.21/kmp_01.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1021/kmp_01.png)
 2. 此时发现prefix[5]之前是匹配成功的，不用管，直接从索引为prefix[5]的位置继续往后比较，直到如图a->b匹配失败，就回到prefix[1]的位置
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.10.21/kmp_02.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1021/kmp_02.png)
 3. 当出现prefix的值为-1时，那么i，j同时往后移动一位，继续上面的操作。
 4. 当i的值小于等于(origin.Length - pattern.Length)时跳出上面的循环。
 
 ## 完整过程
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.10.21/kmp_3.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1021/kmp_3.png)
 
 ## 那么如何生成prefix表?
 qaq 自己明白容易，讲出来挺难额...

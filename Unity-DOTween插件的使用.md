@@ -2,7 +2,7 @@
 title: Unity-DOTween插件的使用
 date: 2018-04-08 20:21:15
 tags: Unity
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/04.08/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/04.08/icon.jpg
 ---
 
 # 1.添加插件，添加命名空间

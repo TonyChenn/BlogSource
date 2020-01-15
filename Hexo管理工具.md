@@ -12,16 +12,16 @@ description: 从此刻起，小白也能搭建自己的博客
 
 # 实现功能
 创建博文，修改名称，删除文章，复制，粘贴，剪切，本地部署调试，重新生成，远程部署。等功能。之后会根据需求进行更新。也欢迎提出宝贵意见。
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0814/file.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0814/file.png)
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0814/config.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0814/config.png)
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0814/menu.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0814/menu.png)
 
 # 如何使用
 终于进入正题了:
 - 首先第一次运行请先配置Hexo博客的主路径，以及主题路径，点击上面第二张图片上的两个按钮都可以打开配置文件，配置文件中第一行为主目录，第二行为使用的主题名称,然后保存即可。
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0814/tip.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0814/tip.png)
 
 - 之后关闭重新打开就可以使用啦。爽歪歪~~
 

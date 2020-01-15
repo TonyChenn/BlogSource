@@ -5,7 +5,7 @@ tags:
     - CSharp
     - TCP
 top:
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.30/tcp.png
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.30/tcp.png
 description:
 ---
 # 服务器端：

@@ -2,7 +2,7 @@
 title: 【Android】AlertDialog对话框
 date: 2017-08-26 16:19:26
 tags: Android
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019.04.28/icon.jpg
 ---
 
  **1.普通的：** 
@@ -33,7 +33,7 @@ builder.show();
 ```
  **2. 列表：**
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/001.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019.04.28/001.jpg)
 
  
 ```java
@@ -55,7 +55,7 @@ builder.show();
 ```
  **3.包含单选框**  
  
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/002.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019.04.28/002.jpg)
  
 ```java
 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -88,7 +88,7 @@ builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
 builder.show();
 ```
  4.包含CheckBox   
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019.04.28/003.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019.04.28/003.jpg)
 
  
 ```java

@@ -7,7 +7,7 @@ tags:
 top:
 password:
 description: 简单粗暴的讲就是--在xml中用来查找信息的语言
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.08/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.08/icon.jpg
 ---
 
 ## 什么是Xpath?

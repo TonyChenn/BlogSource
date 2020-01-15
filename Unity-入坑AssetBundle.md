@@ -7,7 +7,7 @@ tags:
 top:
 password:
 description:
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/12.13/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/12.13/icon.jpg
 ---
 
 AssetBundle（以下称AB）是学习热更新的基础，这也是第一次学，边学边总结边记录下来，希望能给也在开始学热更新的你一些帮助。
@@ -121,11 +121,11 @@ private IEnumerator Use3w(string path)
 
 通过上面的方法，就可以实现将打包到AB包的预制体实例化出来了，但是出现了问题，预制体处于材质丢失状态，所以我们需要将预制体所依赖的贴图，材质等加载到内存中。<b>那么问题来了，每个预制体上有1-n个各种类型的素材，三五个还好能手动添加到内存，但是多了这样就不行了！！</b>那就引出了minifest文件：
 
-![minifest](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/12.13/minifest.jpg)
+![minifest](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/12.13/minifest.jpg)
 
 打开查看：
 
-![open](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/12.13/open.jpg)
+![open](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/12.13/open.jpg)
 
 里面包含了cubewall的所有依赖库，下面就是加载minifest文件，在加载所有依赖文件：
 # 加载minifest和依赖文件
@@ -144,7 +144,7 @@ private void _LoadMinifest(string path)
     }
 } 
 ```
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/12.13/show.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/12.13/show.jpg)
 # 卸载AssetBundle
 当一些资源使用过后不会再使用的资源，我们就可以将他们卸载了，从而减少内存对的使用，当然当资源还需要使用就被卸载就会导致资源丢失。所以何时卸载资源就是一个问题了！
 ## 卸载所有资源，即使资源还正在使用也依然会被卸载

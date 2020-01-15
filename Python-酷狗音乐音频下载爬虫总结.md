@@ -7,7 +7,7 @@ tags:
 top:
 password:
 description: 输入音乐名称，下载音乐到本地
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/icon.jpg
 ---
 
 ## 前言
@@ -21,22 +21,22 @@ img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/i
 ## 获取搜索音乐列表Json
 通过网页解析网页从而拿到音乐数据。我们知道在酷狗中搜索歌曲时会访问一个固定的网址+搜索内容获取数据，如：[https://www.kugou.com/yy/html/search.html#searchType=song&searchKeyWord=卡路里](https://www.kugou.com/yy/html/search.html#searchType=song&searchKeyWord=卡路里)
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/kaluli.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/kaluli.jpg)
 
 找到网页请求的Json数据，然后解析出来：老规矩F12。嗯，找到了：
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/json.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/json.jpg)
 
 看下地址,[https://songsearch.kugou.com/song_search_v2?callback=jQuery112407293972860894198_1542616202354&keyword=卡路里&page=1&pagesize=30&userid=-1&clientver=&platform=WebFilter&tag=em&filter=2&iscorrection=1&privilege_filter=0&_=1542616202356](https://songsearch.kugou.com/song_search_v2?callback=jQuery112407293972860894198_1542616202354&keyword=卡路里&page=1&pagesize=30&userid=-1&clientver=&platform=WebFilter&tag=em&filter=2&iscorrection=1&privilege_filter=0&_=1542616202356)我们就可以通过此链接获取无门需要搜索歌曲的列表。但是分析下这个文件还是没有找到播放音乐的url,额...继续找...
 
 ## 获取歌曲信息Json
 点开一个音乐播放的条目，F12分析：
 
-![f12](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/f12.jpg)
+![f12](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/f12.jpg)
 
 竟然不存在音频文件，但事实音乐已经开始播放了，并且自动播放的。那只能说明播放音乐的url依然不再这里，老办法，查找json文件：
 
-![find](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/find.jpg)
+![find](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/find.jpg)
 
 嗯，没看错，就是在这里，那么获取这个的json的url是什么呢？怎么得到呢？
 
@@ -49,10 +49,10 @@ AlbumID 对应 album_id
 上面获取的音乐列表，音乐详细信息都不是标准的json文本，我们需要的是将其更正为标准的json
 - 音乐列表json处理：
 
-![dojson](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/dojson.jpg)
+![dojson](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/dojson.jpg)
 - 音乐详细信息的Json处理：
 
-![dojson2](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/dojson2.jpg)
+![dojson2](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/dojson2.jpg)
 
 ## 代码实现：
 ```python
@@ -134,9 +134,9 @@ if int(id) > 0 and int(id) <= int(num):
 
 ## 运行结果
 
-![result1](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/result1.jpg)
+![result1](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/result1.jpg)
 
-![result2](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/11.19/result2.jpg)
+![result2](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/11.19/result2.jpg)
 
 > 仅供学习使用，用于商业用途，本人不负责！
 

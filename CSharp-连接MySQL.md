@@ -4,18 +4,18 @@ date: 2017-11-06 21:37:11
 tags: 
      - CSharp
      - MySQL 
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017/11.06/Mysql.png
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/11.06/Mysql.png
 ---
 
 # 第一步：
  下载MySql，安装好MySql Server，MySql For VisualStudio两项；   
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017/11.06/install.jpg) 
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/11.06/install.jpg) 
  这是必不可少的｛/滑稽｝不多说
 
 # 第二步  
  打开VisualStudio，创建一个窗体应用程序；   
  在服务器资源管理器上创建连接：   
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017/11.06/Conntct.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/11.06/Conntct.jpg)
 
 # 第三步：   
  下载文件：MySql.Data.dll(资源尚在审核中……..)

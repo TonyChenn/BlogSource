@@ -5,7 +5,7 @@ tags: Hackintosh
 top:
 password:
 description:
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0614/mojave.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0614/mojave.jpg
 ---
 
 # 1.Windows环境下:
@@ -24,11 +24,11 @@ img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0614/mo
 ## 制作流程
 1. 安装TransMac并打开，使用TransMac将硬盘格式化为Mac支持的格式：
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0227/format.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0227/format.jpg)
 
 2. 选择下载的Mac镜像写入U盘：
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0227/write.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0227/write.jpg)
 
 - 到此，你的U盘在Windows下就不能正常识别了，同时windows也会提示“此U盘无法识别，请格式化U盘”之类的，此时要选择取消格式化！
 

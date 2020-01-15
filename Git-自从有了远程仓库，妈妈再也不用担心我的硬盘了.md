@@ -5,7 +5,7 @@ tags: Git
 top:
 password:
 description: 将本地Git仓库与Github绑定起来
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/github.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/10.24/github.jpg
 ---
 
 # 第一次使用的配置
@@ -18,11 +18,11 @@ ssh-keygen -t rsa -C "youremail@example.com"
 //ssh-keygen -t rsa -C "852454151@qq.com"
 ```
 3. 打开用户主目录，找到<b>.ssh</b>文件夹，打开里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/create.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/10.24/create.jpg)
  登陆Github配置SSH Keys(位置在：右上角头像->Setting->SSH and GPG keys->New SSH Key),将id_rsa.pub内容粘贴到key中;
 
 4. 登陆Github,创建一个新的repository
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/resign.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/10.24/resign.jpg)
 
 5. 关联远程库
 ```c
@@ -46,13 +46,13 @@ git push origin master
 
 此时就能在Github上看到推送上去的readme.txt文件啦
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/see.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/10.24/see.jpg)
 
 
 # 克隆Github仓库文件到本地
 本地文件夹 gitbush 执行 ```git clone https://github.com/TonyChenn/BlogSource.git```
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/10.24/pull.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/10.24/pull.jpg)
 
 # 遇到错误
 <div class="note danger no-icon"><p>failed to push some refs to 'git@github.com:.../....git</p></div>

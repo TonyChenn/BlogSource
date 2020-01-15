@@ -2,6 +2,7 @@
 title: 'Android-双击返回键退出程序'
 date: 2018-03-16 20:16:58
 tags: Android
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
 ## 前言
 在Android中为防止不小心点击到返回键就退出软件，所以通常软件都会使用点击返回键时显示一个Toast消息“再点击一次退出”，当在指定时间内再次点击按钮时退出程序

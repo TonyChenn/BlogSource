@@ -2,7 +2,7 @@
 title: Android-sweetDialog看着都是甜的
 date: 2017-09-12 14:50:35
 tags: Android
-img: 
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
 
  ==声明：本篇文章为转载==
@@ -11,15 +11,15 @@ img:
 
  Android第三方开源对话消息提示框：SweetAlertDialog（sweet-alert-dialog）是一个套制作精美、动画效果出色生动的Android对话、消息提示框，如图所示（部分，还有更多效果，不在此一一展示）：
 
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvftumdkhsg30al0h549u.gif)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/09.12/dialog.gif)
 
  
 
-![](https://ws1.sinaimg.cn/mw690/006PThdlly1fvftv8o3acg30ak07sacj.gif)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/09.12/err.gif)
 
  
 
- ![](https://ws1.sinaimg.cn/large/006PThdlly1fvftw9uf6lg30al0h547g.gif)
+ ![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/09.12/loading.gif)
 
  SweetAlertDialog（sweet-alert-dialog）在github上的项目主页是：[https://github.com/pedant/sweet-alert-dialog](https://github.com/pedant/sweet-alert-dialog)
 

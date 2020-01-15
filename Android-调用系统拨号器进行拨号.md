@@ -3,7 +3,7 @@ title: android-调用系统拨号器进行拨号
 date: 2017-07-09 17:22:42
 tags: Android
 description: 通过安卓程序调用系统拨号器，进而实现拨号操作
-img:
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
 
  **MainActivity.java**

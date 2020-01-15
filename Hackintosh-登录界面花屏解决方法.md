@@ -2,7 +2,7 @@
 title: Hackintosh-登录界面花屏解决方法
 date: 2019-06-14 19:32:14
 tags: Hackintosh
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0614/mojave.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0614/mojave.jpg
 description:
 top:
 ---
@@ -35,7 +35,7 @@ top:
 00FFFFFFFFFFFF004C2D2C0D564C50302E19010380341D782A5295A556549D250E5054BB8C00B30081C0810081809500A9C001010101023A801871382D40582C450009252100001E000000FD0032481E5111000A202020202020000000FC00433234463339300A2020202020000000FF004854514A4330303037370A20200137
 ```
 - 切换到Mac,使用Clover Configerator注入edid
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0614/inject-edid.png)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0614/inject-edid.png)
 
 完成。
 

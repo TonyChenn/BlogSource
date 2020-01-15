@@ -2,7 +2,7 @@
 title: Android-动态申请权限
 date: 2017-10-16 21:18:06
 tags: Android
-img: 
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
 
 ## 前言

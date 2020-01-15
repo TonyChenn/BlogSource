@@ -2,7 +2,7 @@
 title: android-简易发短信软件
 date: 2017-07-09 18:31:30
 tags: Android
-img: 
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
  **MainActivity.java**
 

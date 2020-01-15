@@ -6,7 +6,7 @@ tags:
       - LitJson
       - CSharp
       - fastJson
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/09.07/icon.jpg
 ---
 
 ## JSON介绍
@@ -16,11 +16,11 @@ Json是一种轻量数据交互格式，易于阅读，编写，基于ECMAScript
 - 数据保存在键值对中
 - 数据由逗号分隔
 - 花括号保存对象
-  ![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/object.png)
+  ![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/09.07/object.png)
 - 方括号保存数组
-  ![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/array.png)
+  ![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/09.07/array.png)
 - 值可以是双引号括起来的字符串、数值(number)、true、false、 null、对象或者数组（array）
-   ![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/value.png)
+   ![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/09.07/value.png)
 
 ## 1. 使用LitJson进行序列化与反序列化
 
@@ -58,7 +58,7 @@ Console.WriteLine(json);
 ```
 输出结果(汉字自动转化为Unicode)：
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/result.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/09.07/result.jpg)
 
 ### 反序列化
 - 类型一：

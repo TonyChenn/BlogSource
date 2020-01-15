@@ -2,7 +2,7 @@
 title: Android-Spinner的使用
 date: 2017-06-26 13:39:26
 tags: Android
-img: https://i.loli.net/2019/04/28/5cc55090d5873.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/06.26/spinner.jpg
 ---
 
  **1.第一步**   

@@ -5,7 +5,7 @@ tags:
  - CSharp 
  - HtmlAgilityPack
  - 爬虫
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.01/hap.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/09.01/hap.jpg
 ---
 
 前段时间在UWP中需要解析网页上Html文档，找到了[HtmlAgilityPack](https://html-agility-pack.net/)这个工具，网上也给与很高的评价。学习过后总结一下HtmlAgilityPack的使用；

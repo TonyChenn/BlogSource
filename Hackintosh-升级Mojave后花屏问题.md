@@ -2,7 +2,7 @@
 title: Hackintosh升级Mojave后花屏问题
 date: 2019-04-05 11:31:24
 tags: Hackintosh
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0405/clover.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0405/clover.jpg
 ---
 
 # 前言
@@ -19,24 +19,24 @@ ioreg -l | grep ig-platform-id
 ```
 可以看到我的ig-platform-id是：0600260a
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0405/ig.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0405/ig.jpg)
 
 ## 查看当前加载的Framebuffer
 
 ```commond
 kextstat | grep -y AppleIntel
 ```
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0405/framebuffer.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0405/framebuffer.jpg)
 
 找到含有"Framebuffer"的一项，我的是：AppleIntelFramebufferAzul
 
 在/System/Library/Extensions/文件夹下找到含有AppleIntelFramebufferAzul.kext的驱动，右键显示包内容，在 /Contents/MacOS 下将 kext 的文件拷贝到桌面，并在AppStore下载HexFriend打开该文件，如下：
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0405/find.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0405/find.jpg)
 
 commond+F进行查找上面的ig-platform-id：直到找到连续的一组，并且下一组是：01030303：
 
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0405/find1.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0405/find1.jpg)
 
 复制01030303及后面的四组，然后添加到config.plist的Kernel and Kext Pathes->KextsToPatch中：
 

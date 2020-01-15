@@ -4,7 +4,7 @@ date: 2018-09-07 12:37:02
 tags:
      - CSharp
      - XML
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2018/09.07/xml.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/09.07/xml.jpg
 ---
 
 可扩展标记语言，标准通用标记语言的子集，是一种用于标记电子文件使其具有结构性的标记语言。

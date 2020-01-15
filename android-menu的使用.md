@@ -2,12 +2,12 @@
 title: android-menu的使用
 date: 2017-08-17 10:36:29
 tags: Android
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017.08.06/icon.jpg
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
 
  首先创建一个空白Activity   
  在工程的res/目录下创建menu 文件夹，文件夹下和创建一个Menu resource file   
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017.08.17/001.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/08.17/001.jpg)
 
 添加两个条目，并添加ID：
  
@@ -47,6 +47,6 @@ img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017.08.06/i
         return true;
     }
 ```
-![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2017.08.17/002.jpg)
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/08.17/002.jpg)
    
   

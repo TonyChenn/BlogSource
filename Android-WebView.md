@@ -2,12 +2,12 @@
 title: Android-WebView
 date: 2017-10-11 13:06:27
 tags: Android
-img: 
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
 
 浏览器主要是使用WebView组件
 
- 先看下简单的效果![](https://i.loli.net/2019/04/28/5cc551960400b.jpg)
+ 先看下简单的效果![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2017/10.11/webview.jpg)
 
  只实现了一些简单的浏览器功能
  

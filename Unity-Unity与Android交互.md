@@ -3,7 +3,7 @@ title: Unity-Unity与Android交互
 date: 2019-04-26 19:06:54
 tags: Unity
 description: AndroidStudio制作并导出aar包，在Unity中使用
-img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0426/icon.png
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0426/icon.png
 ---
 # 前言
 用到Unity与Android好多次了，每次都需要重复的找资料，造轮子，这次接了一个小项目后又要用到，完成后下定决心记录AndroidStudio打aar包的过程，本来还想封装起来以后直接用，后来发现这个做法不可行。那以后还是老老实实用一个做一个吧。
@@ -14,9 +14,9 @@ img: https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0426/ic
 
 2. 创建AndroidStudio工程，创建Empty Activity,名称随意，包名随意，最低API也根据自己安装的Android SDK选择。选择Android Library，创建模块。
    
-   ![au1](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0426/au1.jpg)
+   ![au1](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0426/au1.jpg)
 
-   ![newmodule](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0426/newmodule.jpg)
+   ![newmodule](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0426/newmodule.jpg)
 
 3. 在模块中创建EmptyActivity,勾选<bold>Launcher Activity</bold>
 
@@ -169,4 +169,4 @@ URL.onClick.AddListener(() =>
 });
 ```
 # 效果
-![result](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0426/result.jpg)
+![result](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0426/result.jpg)
