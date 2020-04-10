@@ -17,10 +17,12 @@ description: 一款Hexo炒鸡好看的MaterialDesign风格主题，确定不进�
 2. [CSDN博文导出工具](https://github.com/TonyChenn/BlogExportTool)
 
 # 更新介绍：
-- 2020-4-8 : 
+- 2020-4-10 : 
 1. 添加站点地图
-2. 添加灰色模式
+2. 添加灰色(哀悼)模式
 3. 添加谷歌广告开关
+4. 支持Emoji表情
+5. 添加Gitalk 评论方式
 
 - 2020-1-14 : 添加图片预览，优化夜间模式，文章代码排版。
 
@@ -35,7 +37,7 @@ description: 一款Hexo炒鸡好看的MaterialDesign风格主题，确定不进�
 # 实现的功能
 1. 基本的博客展示，首页，标签页，归档页，关于页
 2. 一言随机内容展示
-3. 使用Valine文章评论
+3. 使用Valine文章评论, 新增Gitalk
 4. 开启访问人数，次数统计
 5. 视频博文的展示播放
 6. 全局灰色模式，白天/夜晚模式
@@ -89,6 +91,39 @@ baidusitemap:
 3. 重新生成部署
 ```bash
 $ hexo clean && hexo g && hexo s
+```
+
+## 开启Emoji表情支持
+1. 需要卸载旧的渲染器 & 安装新的渲染器
+```bash
+$ npm un hexo-renderer-marked --save 
+$ npm i hexo-renderer-markdown-it --save
+$ npm install markdown-it-emoji --save
+```
+2. heox配置文件中添加
+``` bash
+# Markdown-it config
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
 ```
 
 # 下载
