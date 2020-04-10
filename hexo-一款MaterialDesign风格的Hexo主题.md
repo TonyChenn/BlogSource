@@ -7,18 +7,27 @@ tags:
 img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0406/icon.jpg
 description: 一款Hexo炒鸡好看的MaterialDesign风格主题，确定不进来瞧瞧？
 ---
-# 前言
-看惯了千篇一律的Next主题，博主就花了点时间做出这套MaterialDesign风格的Hexo网站主题，还有部分功能没有完善，后续会慢慢更新完善，也欢迎大家提出宝贵的意见。
+<h1 align="center">一款Hexo端优美的MaterialDesign风格主题 MDM</h1>
 
-![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0406/header.jpg)
+<h3 align="center">简洁，轻巧，麻麻再也不用担心打开博客速度慢了</h3>
+<br><br>
 
-![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0406/img1.jpg)
+# 推荐
+1. [Hexo 博文管理工具，麻麻再也不用担心忘记管理hexo博文的命令啦](https://github.com/TonyChenn/HexoBlogWriteTool)
+2. [CSDN博文导出工具](https://github.com/TonyChenn/BlogExportTool)
 
-![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0406/img2.jpg)
+# 更新介绍：
+- 2020-4-8 : 
+1. 添加站点地图
+2. 添加灰色模式
+3. 添加谷歌广告开关
 
-![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0406/about.jpg)
+- 2020-1-14 : 添加图片预览，优化夜间模式，文章代码排版。
 
-# 介绍
+# :art:演示
+[tonychenn.cn](https://tonychenn.cn) 觉得不错，点个Star
+
+# :pushpin:介绍
 1. 响应式布局，适配移动端和PC端
 2. 优美MaterialDesign设计
 3. 轻巧极速加载
@@ -29,15 +38,58 @@ description: 一款Hexo炒鸡好看的MaterialDesign风格主题，确定不进�
 3. 使用Valine文章评论
 4. 开启访问人数，次数统计
 5. 视频博文的展示播放
+6. 全局灰色模式，白天/夜晚模式
 
+# :computer:PC端
 
-# 待实现
-1. 站内搜索
-2. 多语言支持
-3. 还没想到
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0406/img1.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0406/img2.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0406/about.jpg)
+
+# :iphone:移动端
+
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0406/phone_main.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0406/phone_tag.jpg)
+![](https://raw.githubusercontent.com/TonyChenn/BlogPicture/master/2019/0406/phone_archives.jpg)
 
 # 案例
 本博客使用mdm主题，更多细节，自行查看[TonyChenn.cn](Tonychenn.cn)
+
+# :cd:安装
+
+## 下载
+```bash
+$ git clone https://github.com/TonyChenn/hexo-theme-mdm
+```
+
+## 更新
+```bash
+$ cd themes/mdm
+$ git pull
+```
+
+## 开启站点地图模块
+1. 安装sitemap
+```bash
+//google
+$ npm install hexo-generator-sitemap --save
+
+//baidu
+$ npm install hexo-generator-baidu-sitemap --save
+```
+2. 配置sitemap
+主题根目录下_config.yml文件中启用下面
+```
+# 站点地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+```
+3. 重新生成部署
+```bash
+$ hexo clean && hexo g && hexo s
+```
 
 # 下载
 Github: https://github.com/TonyChenn/hexo-theme-mdm
