@@ -4,7 +4,7 @@ date: 2020-05-14 13:55:42
 tags: 
     - Unity
     - Shader
-img:
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2020/0514/previous.gif
 description: NGUI下物体扫光特效
 top:
 ---
@@ -22,18 +22,15 @@ Shader "Unlit/Walk light"
 		_MainTex ("Base (RGB), Alpha (A)", 2D) = "black" {}
 		_LightTex ("Light", 2D) = "black" {}
 	}
-	
 	SubShader
 	{
 		LOD 200
-
 		Tags
 		{
 			"Queue" = "Transparent"
 			"IgnoreProjector" = "True"
 			"RenderType" = "Transparent"
 		}
-		
 		Pass
 		{
 			Cull Off
@@ -57,14 +54,12 @@ Shader "Unlit/Walk light"
 				float2 texcoord : TEXCOORD0;
 				fixed4 color : COLOR;
 			};
-	
 			struct v2f
 			{
 				float4 vertex : SV_POSITION;
 				half2 texcoord : TEXCOORD0;
 				fixed4 color : COLOR;
 			};
-	
 			v2f o;
 
 			v2f vert (appdata_t v)
@@ -73,8 +68,7 @@ Shader "Unlit/Walk light"
 				o.texcoord = v.texcoord;
 				o.color = v.color;
 				return o;
-			}
-				
+			}	
 			fixed4 frag (v2f IN) : COLOR
 			{
 				fixed4 main = tex2D(_MainTex, IN.texcoord);
