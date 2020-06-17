@@ -1,5 +1,5 @@
 ---
-title: 【Android】AlertDialog对话框
+title: Android-AlertDialog对话框
 date: 2017-08-26 16:19:26
 tags: Android
 img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019.04.28/icon.jpg

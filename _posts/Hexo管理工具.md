@@ -1,7 +1,7 @@
 ---
 title: Hexo管理工具
 date: 2019-08-14 13:27:05
-update: 2020-6-2
+updated: 2020-6-2 13:25:45
 tags: 
     - Hexo
     - CSharp

@@ -1,9 +1,9 @@
 ---
 title: Android-Intent相关总结
 date: 2020-05-21 18:21:51
-update: 2020-6-4
+updated: 2020-06-04
 tags: Android
-img:
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/android/intent.jpg
 description:
 top:
 ---

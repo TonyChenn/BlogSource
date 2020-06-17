@@ -1,9 +1,9 @@
 ---
 title: mdm
 date: 2019-04-06 19:49:01
-update: 2020-4-10
+updated: 2020-4-10 19:34:21
 tags: 
-    - hexo
+    - Hexo
     - 前端
 img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/0406/icon.jpg
 description: 一款Hexo炒鸡好看的MaterialDesign风格主题，确定不进来瞧瞧？

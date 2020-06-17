@@ -1,9 +1,9 @@
 ---
 title: Android-四种基本布局(3)
-date: 2020/6/5 16:08
-update: 
+date: 2020-06-05 16:08:51
+updated: 
 tags: Android
-img: 
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/android/layout.jpg
 description:
 top: 
 ---
@@ -193,9 +193,8 @@ RelativiteLayout可以通过相对定位的方式实现让控件出现在布局�
 # 帧布局(FrameLayout)
 然并卵...
 # 百分比布局
+- 在API级别26.1.0中已弃用该类
+
 由于只有LinearLayout支持以比例的形式控制控件的大小，RelativeLayout和FrameLayout很难实现百分比控制控件的大小，所以Android引入**百分比布局**的形式解决这个问题。</br>
 百分比布局包括1.PercentFrameLayout，2.PercentRelativeLayout. </br>
 在百分比布局中不再设置**layout_width**，**layout_height**，而是**layout_widthPercent**与**layout_heightPercent**,为了让所有的Android版本都能用上，所以Android团队将百分比布局定义在了support库中。在使用时在build.gradle中添加即可。
-```java
-
-```

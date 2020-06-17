@@ -1,7 +1,7 @@
 ---
 title: android-menu的使用(1)
 date: 2017-08-17 10:36:29
-update: 2020-5-21
+updated: 2020-5-21
 tags: Android
 img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2018/03.16/icon.jpg
 ---
