@@ -1,7 +1,7 @@
 ---
 title: mdm
 date: 2019-04-06 19:49:01
-updatetime: 2020-04-10 19:34:21
+updatetime: 2020-06-20 18:10:21
 top: 100
 tags: 
     - Hexo
@@ -19,6 +19,16 @@ description: 一款Hexo炒鸡好看的MaterialDesign风格主题，确定不进�
 2. [CSDN博文导出工具](https://github.com/TonyChenn/BlogExportTool)
 
 # 更新介绍：
+- 2020-6-20
+1. 文章置顶
+2. 显示更新日期
+
+- 2020-5-27：
+1. PWA支持
+2. 点击特效
+3. 分享
+4. 打赏
+
 - 2020-4-10 : 
 1. 添加站点地图
 2. 添加灰色(哀悼)模式
@@ -126,6 +136,41 @@ markdown:
     permalink: true
     permalinkClass: header-anchor
     permalinkSymbol: ¶
+```
+## 文章置顶及自定义排序
+请到Hexo项目下的<kbd>\node_modules\hexo-generator-index\lib\generator.js</kbd>找到该文件并打开。(js代码简单，不过多介绍，有需要修改的自行修改) 替换为如下内容：
+```js
+'use strict';
+
+var pagination = require('hexo-pagination');
+module.exports = function(locals) {
+
+  var config = this.config;
+  var posts = locals.posts;
+  var paginationDir = config.pagination_dir || 'page';
+
+  posts.data = posts.data.sort(function(a, b) {
+      var a_time = (a.update_time && a.update_time>a.date) ? a.update_time : a.date;
+      var b_time = (b.update_time && b.update_time>b.date) ? b.update_time : b.date;
+      
+      if(a.top && b.top)  return a.top == b.top ? b_time-a_time: b.top-a.top;
+
+      else if(a.top)  return -1;
+      else if(b.top)  return 1;
+
+      else return b_time - a_time;
+  });
+
+
+  return pagination('', posts, {
+    perPage: config.index_generator.per_page,
+    layout: ['index', 'archive'],
+    format: paginationDir + '/%d/',
+    data: {
+      __index: true
+    }
+  });
+};
 ```
 
 # 下载
