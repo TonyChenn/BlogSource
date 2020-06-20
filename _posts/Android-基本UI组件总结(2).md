@@ -1,7 +1,7 @@
 ---
 title: Android-基本UI控件总结
 date: 2020-06-04 18:05:31
-updated: 
+updatetime: 
 tags: Android
 img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/android/copoment.jpg
 description: 软件也需要拼脸蛋

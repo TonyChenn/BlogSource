@@ -1,7 +1,7 @@
 ---
 title: Android-ListView的使用(4)
 date: 2017-08-06 18:06:15
-updated: 2020-6-12
+updatetime: 2020-06-12 18:06:15
 tags: Android
 description: 对Android中ListView界面及数据绑定的总结
 img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/android/listview.jpg
