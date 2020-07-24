@@ -120,33 +120,52 @@ end
 |format()|字符串格式化（与C语言相似）|
 |len(string)|取长度|
 |rep(str,n)|返回str的n个拷贝|
-# List<T>列表
-## lua描述列表
+
+# Lua table(表)
+1. table.concat,将表中数据连接成字符串
+2. table.insert(a_table,value,pos),将数据插到pos位置，pos默认为table末尾
+3. table.remove(a_table,pos),从a_table中删除pos位置的数据，pos默认为table的末尾
+4. table.sort(table)
+
+# 定义包与引用包
+
+- 定义包
 ```lua
--- csharp列表 List<int>
---lua
-local list_rewarditem = CS.System.Collections.Generic.List(CS.UnityGMClient.RewardItem);
+-- 文件名为 module.lua
+-- 定义一个名为 module 的模块
+module = {}
+ 
+-- 定义一个常量
+module.constant = "这是一个常量"
+ 
+-- 定义一个函数
+function module.func1()
+    io.write("这是一个公有函数！\n")
+end
+ 
+local function func2()
+    print("这是一个私有函数！")
+end
+ 
+function module.func3()
+    func2()
+end
+ 
+return module
 ```
-## lua实例化列表
+- 引用包
 ```lua
-local list=list_rewarditem();
+require("module_name")
+
+require "module_name"
 ```
-## 向列表中添加数据
-```lua
--- reward 为 RewardItem对象
-list:Add(reward);
-```
-# Lua面向对象编程
-## 创建对象
-```lua
-local reward=CS.UnityGMClient.RewardItem();
-```
-## 给对象赋值
-```lua
-reward.m_nItemID=tonumber(10001);   -- 奖励物品ID
-reward.m_nCount = tonumber(100);    -- 奖励数量
-reward.m_nMatune = tonumber(-1);    -- 奖励物品时效
-```
+
+# 协程
+
+# IO
+
+# 面向对象
+
 
 # pairs与ipairs的区别
 1. pairs(table) 再遍历过程中遇到值为nil时就停止迭代,不能返回nil值。
