@@ -127,4 +127,4 @@ Shader "Unlit/Walk light"
 代码控制就不写了，网上一大把。自己想想也能明白。
 
 # 在NGUI的UIScrollView下特效不显示解决
-原因是在NGUI的UIScrollView中被剪裁掉了，只需要选择Clipping为：**Constrain But Dont Clip**即可。
+~~原因是在NGUI的UIScrollView中被剪裁掉了，只需要选择Clipping为：**Constrain But Dont Clip**即可。~~
