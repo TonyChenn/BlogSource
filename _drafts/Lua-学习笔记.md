@@ -16,6 +16,7 @@ while a>0 do
     a=a-1;
 end
 ```
+
 ## for循环
 ```lua
 -- 遍历数字
@@ -24,11 +25,16 @@ for i=1,10 do
 end
 
 -- 迭代数组列表
-for k,v in pairs(table) do
+for k,v in ipairs(table) do 
     ...
 end
 
+-- 迭代hash表
+for k,v in pairs(table) do
+    ...
+end
 ```
+
 # 流程控制
 ```lua
 -- 判断最大值
@@ -47,8 +53,10 @@ else
     print("C");
 end
 ```
+
 # 函数
 lua函数可以返回<kbd>多个值</kbd>
+
 ## 返回多个值
 遍历一个列表，返回列表中的两个最大值，代码如下：
 ```lua
@@ -66,19 +74,22 @@ local function twoMax(list)
 end
 print(twoMax(list));
 ```
+
 ## 可变参数
 使用可变参数必须在固定参数后面，求平均值代码如下：
 ```lua
 local function average(...)
     local result=0;
     local args={...};   -- 使用表承接所有的参数
-    for k,v in ipairs(args) do
+    for k,v in pairs(args) do
         result=result+v;
     end
     return result/ #args;
 end
 ```
+
 # 运算符
+
 ## 数学运算符
 |符号|描述|
 |---|---|
@@ -88,6 +99,7 @@ end
 |/|除法|
 |%|取余|
 |^|乘幂|
+
 ## 关系运算符
 |符号|描述|
 |---|---|
@@ -97,12 +109,14 @@ end
 |<|小于|
 |>=|大于等于|
 |<=|小于等于|
+
 ## 逻辑运算符
 |符号|描述|
 |---|---|
 |and|且|
 |or|或|
 |not|非|
+
 ## 其他运算符
 |符号|描述|
 |---|---|
@@ -168,5 +182,5 @@ require "module_name"
 
 
 # pairs与ipairs的区别
-1. pairs(table) 再遍历过程中遇到值为nil时就停止迭代,不能返回nil值。
-2. ipairs(table) 再遍历过程中遇到nil值可以继续迭代，可以返回nil值。
+1. ipairs(table) 再遍历过程中遇到值为nil时就停止迭代,不能返回nil值。
+2. pairs(table) 再遍历过程中遇到nil值可以继续迭代，可以返回nil值。

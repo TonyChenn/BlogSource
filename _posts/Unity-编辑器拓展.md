@@ -233,6 +233,7 @@ string saveFolder = EditorUtility.SaveFolderPanel("Test", saveFolder, "");
 - 自定义窗口的界面使用OnGUI绘制
 - OnGUI的笔记会有一篇专门文章
 
+
 ```csharp
 public class MyWindow : EditorWindow 
 {
@@ -265,3 +266,13 @@ public class MyWindow : EditorWindow
 ```csharp
 GUIUtility.systemCopyBuffer="str_content";
 ```
+
+# 常用Attribute
+|Attribute|作用|
+|---|---|
+|HideInInspector|在属性面板隐藏|
+|Tooltip("")|鼠标放上提示|
+|Range(0,10)|序列化为滑块|
+|RequireComponent(typeof())|依赖组件|
+|HelpURL("url")|帮助链接|
+|Multiline|string类型添加多行输入|
