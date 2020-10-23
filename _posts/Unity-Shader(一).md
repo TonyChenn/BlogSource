@@ -1,5 +1,5 @@
 ---
-title: Unity-Shader(一)
+title: Unity-Shader笔记之渲染管线(一)
 date: 2020-09-25 17:19:00
 tags:
     - Unity
@@ -45,7 +45,3 @@ HLSL，GLSL，CG是三种常见的着色器语言，用来编写着色器。这�
 <b>GLSL</b>基于OpenGL,优点在于跨平台性，只要显卡驱动支持即可正常工作，可以在Windows,Mac,Linux,移动平台工作。但是由于OpenGL不提供着色器编译器，而是由显卡驱动完成着色器编译，导致GLSL的编译结果取决于不用的显卡硬件厂商，进而导致编译结果不尽相同。
 
 <b>CG</b>基于Nvidia，真正意义上的跨平台。根据不同的平台生成不同的中间语言。
-
-# 为什么DrawCall多了会影响帧率？
-CPU与GPU的并行工作应用了<b>并行缓冲区</b>.与生产者-消费者模型类似。CPU提交DrawCall到缓冲区，GPU从缓冲区取数据。
-效率上，CPU要向GPU发送许多数据，以及检查工作，而GPU渲染能力很强，所以GPU从缓冲区取命令的速度远远大于CPU发送命令的速度。所以DrawCall过多会导致CPU过载。
