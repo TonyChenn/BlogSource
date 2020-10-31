@@ -3,7 +3,10 @@ title: Unity-Shader笔记之渲染管线(一)
 date: 2020-09-25 17:19:00
 tags:
     - Unity
-    - Shader
+    - Shader笔记
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2020/0925/icon.jpg
+description:
+top: 
 ---
 # 渲染流水线
 渲染流水线的工作是将一个三维场景出发，渲染成一张二维图像。这个过程由CPU,GPU共同完成。渲染流程分三个阶段：

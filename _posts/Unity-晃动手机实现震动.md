@@ -3,6 +3,7 @@ title: Unity-晃动手机实现震动
 date: 2020-10-14 16:30:00
 tags:
     - Unity
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2020/1014/shake.gif
 ---
 
 # 问题

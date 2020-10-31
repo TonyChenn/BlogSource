@@ -17,5 +17,4 @@ top:
 ## 公式
 灰色值=颜色.r x 0.299 + 颜色.g x 0.587 + 颜色.b * 0.114
 # 遇到问题
-1. 在UIScrollView中使用soft clip无法剪裁.效果图如下：
-![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2020/0820/unclip.gif)
+1. 在UIScrollView中使用soft clip无法剪裁。解决方案请看。。。。。
