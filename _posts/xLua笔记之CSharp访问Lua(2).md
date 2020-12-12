@@ -1,5 +1,5 @@
 ---
-title: xLua笔记之LuaCallCSharp(2)
+title: xLua笔记之CSharp访问Lua(2)
 date: 2020-10-28 18:53:00
 tags:
     - Unity
@@ -9,9 +9,8 @@ tags:
 top:
 password:
 description:
-img:
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2020/1028/icon.jpg
 ---
-
 # C#访问全局属性
 ```lua
 -- lua代码
