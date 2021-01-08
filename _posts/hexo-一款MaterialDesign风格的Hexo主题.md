@@ -19,6 +19,9 @@ description: 一款Hexo炒鸡好看的MaterialDesign风格主题，确定不进�
 2. [CSDN博文导出工具](https://github.com/TonyChenn/BlogExportTool)
 
 # 更新介绍：
+- 2021.1.1
+- 升级hexo4.2.0后pwa无法使用, 解决方法看下面。
+
 - 2020-11-12
 1. 解决在IOS设备Safari浏览器上布局错乱问题
 
@@ -179,6 +182,16 @@ module.exports = function(locals) {
     }
   });
 };
+```
+## 开启PWA
+待补充
+
+## hexo升级4.2.0后PWA失效
+参考[https://github.com/hexojs/hexo/issues/4044](https://github.com/hexojs/hexo/issues/4044)
+在hexo-pwa插件没修复之前解决方案：打开`\node_modules\hexo-pwa\lib\serviceWorker.js` 修改下面内容：
+```js
+- let posts = this.locals.cache.posts.data;
++ let posts = locals.posts.sort('-date').toArray();
 ```
 
 # 下载
