@@ -8,91 +8,6 @@ top:
 ---
 对于编辑器拓展代码通常情况下会存放在工程根目录下的"Editor/"目录中，此目录下代码只会在引擎中调用运行，打包时**不会**打包进工程
 
-# 创建菜单
-
-## 顶部栏按钮
-1. 引用命名空间
-2. 给方法添加标记
-3. 方法必须为静态方法
-
-```csharp
-using UnityEditor;
-
-public class ExTool
-{
-    [MenuItem("Tools/拓展工具")]
-    static void MyItemMenu()
-    {
-        UnityEngine.Debug.Log("测试");
-    }
-}
-```
-## 菜单方法显示优先级
-通常情况下自上而下排序，优先级默认都为1000，更改优先级就可进行排序
-```csharp
-using UnityEditor;
-using UnityEngine;
-
-public class ExTool
-{
-    [MenuItem("Tools/拓展工具1",false,3)]
-    static void MyItemMenu1()
-    {   Debug.Log("测试1");   }
-    [MenuItem("Tools/拓展工具2", false,2)]
-    static void MyItemMenu2()
-    {   Debug.Log("测试2");   }
-    [MenuItem("Tools/拓展工具3", false,1)]
-    static void MyItemMenu3()
-    {   Debug.Log("测试3");   }
-}
-```
-![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/unsort.png)
-
-## Hierarchy窗口鼠标右击菜单
-即将自定义菜单路径设置在"GameObject/"路径下;
-根据需要将优先级设置为1-10;
-```csharp
-using UnityEditor;
-using UnityEngine;
-
-public class ExTool
-{
-    [MenuItem("GameObject/拓展工具1",false,3)]
-    static void MyItemMenu1()
-    {
-        Debug.Log("测试1");
-    }
-}
-```
-
-## Project窗口右击菜单
-只需要将路径设置在"Assets/"路径下即可
-
-## Inspector窗户右击菜单(MenuItem方式)
-1. 需要指定需要拓展所对应的组件
-2. 位于"CONTEXT/"路径下
-
-```csharp
-public class ExTool
-{
-    [MenuItem("CONTEXT/Camera/工具1")]
-    static void MyItemMenu1()
-    {
-        Debug.Log("测试1");
-    }
-}
-```
-![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/Inspertor.jpg)
-## 获取当前操作对象
-```csharp
-[MenuItem("CONTEXT/Camera/绿色背景")]
-static void MyItemMenu1(MenuCommand cmd)
-{
-    Camera camera = cmd.context as Camera;
-    camera.backgroundColor = Color.green;
-}
-```
-
 # 物体操作
 ## 获取选中的物体(一个)
 1. 如果选择多个，则只返回第一个
@@ -140,7 +55,7 @@ static void LogSelectObjName()
 - 单个按键：路径后面+空格+"_"+按键
 
 ```csharp
-//% 代表Ctrl
+//% 代表Ctrl|Commond(OSX)
 //# 代表Shift
 //& 代表Alt
 
@@ -177,6 +92,7 @@ void Add()
     this.Count += 10;
 }
 ```
+![](https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2019/1119/Inspertor.jpg)
 
 # ScriptableWizard对话框
 ```csharp
@@ -225,7 +141,7 @@ string saveFolder = EditorUtility.SaveFolderPanel("Test", saveFolder, "");
 ```
 
 # 数据保存EditorPrefs
-与PlayerPrefs相对，在编辑器模式下有EditorPrefs，用法一致。
+与PlayerPrefs相对，在编辑器模式下有EditorPrefs，用法一致。`但是千万不要像PlayerPrefs那样把EditorPrefs的所有数据清空!!!`
 
 # 显示进度条EditorUtility
 
@@ -266,13 +182,11 @@ public class MyWindow : EditorWindow
 ```csharp
 GUIUtility.systemCopyBuffer="str_content";
 ```
+## 进度条的使用
+```csharp
+//显示
+EditorUtility.DisplayProgressBar("title", "info", (float)currentIndex++ / fileCount);
 
-# 常用Attribute
-|Attribute|作用|
-|---|---|
-|HideInInspector|在属性面板隐藏|
-|Tooltip("")|鼠标放上提示|
-|Range(0,10)|序列化为滑块|
-|RequireComponent(typeof())|依赖组件|
-|HelpURL("url")|帮助链接|
-|Multiline|string类型添加多行输入|
+//移除
+EditorUtility.ClearProgressBar();
+```

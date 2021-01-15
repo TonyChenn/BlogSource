@@ -17,86 +17,94 @@ top:
 # 各种循环
 1. lua中不等于是："~="
 2. lua中字符串拼接是："str_a..str_b",加号是计算两个数字现加。
-3. lua中逻辑运算符是：and or not
+
 ## while循环
 ```lua
-local a=10
-while a>0 do
-    print(a)
-    a=a-1
-end
+while condition do print("") end
 ```
 ## for循环
 ```lua
 -- 遍历数字
-for i=1,10 do print(i) end
+for i=1,10 do ... end
 
 -- 迭代数组列表，ipair在遍历过程中遇到值为nil时就停止迭代,不能返回nil值
-for k,v in ipairs(table) do 
-    ...
-end
+for k,v in ipairs(table) do ... end
 
 -- 迭代hash表，遍历过程中遇到nil值可以继续迭代，可以返回nil值
-for k,v in pairs(table) do
-    ...
-end
+for k,v in pairs(table) do ... end
 ```
 ## until循环
 ```lua
 sum = 2
-repeat
-   sum = sum ^ 2 --幂操作
-   print(sum)
-until sum >1000
+repeat ... until condition
 ```
-
-# if-else
-```lua
--- 判断最大值
-if a>b then print(a) else print(b) end
-
--- 成绩档次
-if score==100 then
-    print("A")
-elif score>=80 and score<100 then
-    print("B")
-else
-    print("C")
-end
-```
-
 # 函数
 样子和javascript挺像,允许多个返回值。也是前面加上<kbd>local</kbd>变成局部函数。
 
 ## 返回多个值
-遍历一个列表，返回列表中的两个最大值，代码如下：
 ```lua
-local list={1,5,2,7,3,8}
-local function twoMax(list)
-    local first_max=0
-    local second_max=0
-    for k,v in pairs(list) do
-        if v > first_max then
-            second_max = first_max
-            first_max = v
-        end
-    end
-    return first_max,second_max
-end
-print(twoMax(list))
+function fun0() end
+function fun1() return "a" end
+function fun2() return "a","b" end
+```
+在多重赋值时，如果方法是放在表达式最后面，则该函数会尽可能多的返回值来匹配待赋值的变量。
+```lua
+x, y = fun0()        -- x:nil, y:nil
+x, y = fun1()        -- x:"a", y:nil
+x, y, z = fun2()     -- x:"a", y:"b", z=nil
+t={20, fun2()}       -- t[1]:20, t[2]:"a", t[3]:"b"
+```
+如果没有放在表达式最后面，则表达式只会返回1个值
+```lua
+x, y = fun2(), 20       -- x:"a", y:20
+x, y = fun2(), 20, 30   -- x:"a", y:20
+t = {fun0(), fun2(), 30}-- t[1]=nil, t[2]="a", t[3]=30
 ```
 
 ## 可变参数
-使用可变参数必须在固定参数后面，求平均值代码如下：
+三个点表示可变参数，使用可变参数必须在固定参数后面，求平均值代码如下：
 ```lua
 local function average(...)
     local result=0
-    local args={...}   -- 使用表承接所有的参数
-    for k,v in pairs(args) do
+    for k,v in pairs({...}) do
         result=result+v
     end
     return result/ #args
 end
+```
+遍历参数不存在nil的可变参数时可以按照上面的方法通过表承接的方式拿到所有参数`{...}`是有效的；但是当参数中存在无效的nil时，那么`{...}`也会变得无效，此时可以通过`table.pack`的方式将所有的参数放到一张表中，同时存储字段n来保存参数的长度。
+```lua
+local result = table.pack(...)
+local len = result.n
+```
+遍历可变参数的另一种方式是使用`select函数`:
+```lua
+print(select (1,"a","b","c"))    -- > a b c 
+print(select (2,"a","b","c"))    -- > b c
+print(select (3,"a","b","c"))    -- > c
+print(select ("#","a","b","c"))  -- > 3
+```
+
+# Lua table(表)
+- lua的table是一个key-value的数据结构。只是key的数据类型可以不相同，值的数据类型也可以不相同，也可以是方法。
+- lua中表中第一个值的索引时1，从1开始，与其他语言不相同。
+- 可以通过<kbd>#animal</kbd>获取表的长度。
+```lua
+animal={name="panda", age=6}
+```
+- 在lua中，也是用table管理没有使用local修饰的全局变量，存放在一个叫<kbd>_G</kbd>的表中.可以通过下面方法访问全局变量.
+```lua
+print(_G.animal)
+print(_G["animal"])
+```
+## table.pack
+参看上面 "可变参数"
+## table.unpack
+上面用到`table.pack`用来将可变参数转换成一个表，同样`table.unpack`的作用就是将一张表中数据取出成一个个参数。如果有需要，也可以控制返回范围
+```lua
+a, b = table.unpack({"A", "B", "C"})        -- a:"A", b:"B"
+-- 返回从2到3的数据
+a, b = table.unpack({"A", "B", "C"}, 2, 3)  -- a:"B", b:"C"
 ```
 
 # 字符串操作
@@ -110,38 +118,61 @@ end
 |format()|字符串格式化（与C语言相似）|
 |len(string)|取长度|
 |rep(str,n)|返回str的n个拷贝|
+## string.find
+## string.match
+返回匹配的字符串，可用作正则匹配。
+## string.gsub
+```lua
+-- string.gsub(str_origin, sub, replace, times)
+print(string.gsub("Hello, world!", "l", "Z", 2))
+--输出：HeZZo, world!
 
-# Lua table(表)
-- lua的table是一个key-value的数据结构。只是key的数据类型可以不相同，值的数据类型也可以不相同，也可以是方法。
-- lua中表中第一个值的索引时1，从1开始，与其他语言不相同。
-- 可以通过<kbd>#animal</kbd>获取表的长度。
-```lua
-animal={name="panda", age=6}
+-- 其中第三个参数也可以还可以是函数
+--string.gsub(str_origin, sub, function, times)
+function show(str) print("->"..str) end
+string.gsub("Hello, world!","l",show,1)
+-- 输出：->l
 ```
-- 基础的表操作：
+
+# lua 正则（模式匹配）
+|符号|解释|
+|---|---|
+|.|任意字符|
+|%a|字母|
+|%c|控制字符|
+|%d|数字|
+|%g|除空格外的可打印字符|
+|%l|小写字母|
+|%p|标点符号|
+|%s|空白字符|
+|%u|大写字母|
+|%w|字母+数字|
+|%x|16进制|
+
 ```lua
-print(animal.name)      -- 获取变量
-animal.name = "cat"     -- 修改变量
-animal.like = "fish"    -- 添加
-animal.age = nil        -- 移除
+print(string.gsub("Hello, world!","%A","*"))
+-- 输出： Hello**world*
 ```
-- 数组
+
+修饰符：
+|符号|解释|
+|---|---|
+|+|重复1次或多次|
+|*|重复0次或多次|
+|-|重复0次或多次(最小匹配)|
+|?|出现0次或1次|
+
+# 时间
 ```lua
-array={1, 5, 10, 6, 3}
---等价于下面
-array={[1]=1, [2]=5, [3]=10, [4]=6, [5]=3}
+-- 获取时间戳
+local time = os.time()
+-- 获取日期
+local date = os.date("*t", time)
 ```
-- 在lua中，也是用table管理没有使用local修饰的全局变量，存放在一个叫<kbd>_G</kbd>的表中.可以通过下面方法访问全局变量.
-```lua
-print(_G.animal)
-print(_G["animal"])
-```
-访问所有全局变量
-```lua
-for k,v pairs(animal)
-    print(k..v)
-end
-```
+格式化输出：
+
+
+
 # MetaTable与MetaMethod
 MetaTable是用来做一些重写运算符的操作。例如a和b同学一块统计班级里学生信息，得到a={boy=13,girl=15},b={boy=18,girl=16}，现在要合并数据a+b操作时肯定不行的，这是就可以通过MetaTable实现a+b的计算:
 ```lua
@@ -191,16 +222,16 @@ module = {}
 module.constant = "这是一个常量"
  
 -- 定义一个函数
-function module.func1()
-    io.write("这是一个公有函数！\n")
+function module:func1()
+    print("这是一个公有函数！\n")
 end
  
-local function func2()
+local function module:func2()
     print("这是一个私有函数！")
 end
  
-function module.func3()
-    func2()
+function module:func3()
+    self:func2()
 end
  
 return module
