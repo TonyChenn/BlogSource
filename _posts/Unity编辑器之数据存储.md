@@ -7,9 +7,9 @@ tags:
 top:
 password:
 description: 编辑器拓展过程中存储数据的方式
-img:
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2021/0227/icon.png
 ---
-在编辑器拓展过程中如果需要保存一些数据以便在下次打开后使用，如：项目的设置，编辑器拓展需要的参数等。可以通过下面几种方式实现。不要在OnGUI中对EditorPrefs进行保存操作，OnGUI会被多次调用，负荷高。谨慎使用`EditorPrefs.ClearAll()`.
+在编辑器拓展过程中如果需要保存一些数据以便在下次打开后使用，如：项目的设置，编辑器拓展需要的参数等。可以通过下面几种方式实现：
 
 # EditorPrefs
 首先说下EditorPrefs,它和PlayerPrefs相似，只是后者在Runtime下使用，前者在编辑器模式下使用。在EditorPrefs中存储的数据不会限制于项目。用于存储一些编辑器相关数据，由于是明文存储，所以不适合存放密码。对于一些敏感数据，可以存放到EditorUserSettings中以二进制进行加密，使用`EditorUserSettings.Set / GetConfigValue`读，取。
@@ -116,6 +116,10 @@ public static void SetColor(string prefs_key, Color c)
 |Windows(Unity5.x) |HKEY_CURRENT_USER\Software\Unity Technologies\UnityEditor 5.x|
 |MacOS X(Unity4.x) |~/Library/Preferences/com.unity3d.UnityEditor4.x.plist|
 |MacOS X(Unity5.x) |~/Library/Preferences/com.unity3d.UnityEditor5.x.plist|
+
+## 注意
+- 不要在OnGUI中对EditorPrefs进行保存操作，OnGUI会被多次调用，负荷高。
+- 谨慎使用`EditorPrefs.ClearAll()`.
 
 # ScriptableObject
 用来存放项目中共享的数据，可以当作本地数据库，存储大量数据。ScriptObject的用途还是挺大的，篇幅过大之后专门写一篇关于ScriptObject的各种方便开发的用法。

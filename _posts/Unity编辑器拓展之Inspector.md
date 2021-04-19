@@ -7,7 +7,7 @@ tags:
 top:
 password:
 description: Inspector面板的各种控件
-img:
+img: https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/2021/0227/icon.png
 ---
 通过将字段声明为`public`类型即可在`Inspector`面板中看到，如果不想将public类型变量显示在Inspector，可以使用`HideInInspector`。也可以使用`SerializeField`将私有类型的变量显示在Inspector面板。
 
